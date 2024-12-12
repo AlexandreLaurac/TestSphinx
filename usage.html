@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Usage &#8212; Documentation Lumache 0.1</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="API" href="api.html" />
+    <link rel="prev" title="Welcome to Lumache’s documentation!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Index général"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Index des modules Python"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="api.html" title="API"
+             accesskey="N">suivant</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Lumache’s documentation!"
+             accesskey="P">précédent</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Documentation Lumache 0.1</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="installation">
+<span id="id1"></span><h2>Installation<a class="headerlink" href="#installation" title="Lien permanent vers ce titre">¶</a></h2>
+<p>To use Lumache, first install it with pip:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install lumache
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-recipes">
+<h2>Creating recipes<a class="headerlink" href="#creating-recipes" title="Lien permanent vers ce titre">¶</a></h2>
+<p>To retrieve a list of random ingredients, you can use the <code class="docutils literal notranslate"><span class="pre">lumache.get_random_ingredients()</span></code> function:</p>
+<dl class="function">
+<dt id="lumache.get_random_ingredients">
+<code class="sig-prename descclassname">lumache.</code><code class="sig-name descname">get_random_ingredients</code><span class="sig-paren">(</span><em class="sig-param">kind=None</em><span class="sig-paren">)</span><a class="headerlink" href="#lumache.get_random_ingredients" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Return a list of random ingredients as strings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres</dt>
+<dd class="field-odd"><p><strong>kind</strong> (<em>list</em><em>[</em><em>str</em><em>] or </em><em>None</em>) – Optional « kind » of ingredients.</p>
+</dd>
+<dt class="field-even">Lève</dt>
+<dd class="field-even"><p><a class="reference internal" href="#lumache.InvalidKindError" title="lumache.InvalidKindError"><strong>lumache.InvalidKindError</strong></a> – if the kind is invalid.</p>
+</dd>
+<dt class="field-odd">Renvoie</dt>
+<dd class="field-odd"><p>the ingredients list.</p>
+</dd>
+<dt class="field-even">Type renvoyé</dt>
+<dd class="field-even"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>The <code class="docutils literal notranslate"><span class="pre">kind</span></code> parameter should be either <code class="docutils literal notranslate"><span class="pre">&quot;meat&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;fish&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;veggies&quot;</span></code>. Otherwise, <a class="reference internal" href="#lumache.get_random_ingredients" title="lumache.get_random_ingredients"><code class="xref py py-func docutils literal notranslate"><span class="pre">lumache.get_random_ingredients()</span></code></a> will raise an exception.</p>
+<dl class="function">
+<dt id="lumache.hello_world">
+<code class="sig-prename descclassname">lumache.</code><code class="sig-name descname">hello_world</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lumache.hello_world" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>The classical “Hello, World!” function</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="lumache.InvalidKindError">
+<em class="property">exception </em><code class="sig-prename descclassname">lumache.</code><code class="sig-name descname">InvalidKindError</code><a class="headerlink" href="#lumache.InvalidKindError" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Raised if the kind is invalid</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table des matières</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Usage</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#creating-recipes">Creating recipes</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Sujet précédent</h4>
+  <p class="topless"><a href="index.html"
+                        title="Chapitre précédent">Welcome to Lumache’s documentation!</a></p>
+  <h4>Sujet suivant</h4>
+  <p class="topless"><a href="api.html"
+                        title="Chapitre suivant">API</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Cette page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/usage.rst.txt"
+            rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Index général"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Index des modules Python"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="api.html" title="API"
+             >suivant</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Lumache’s documentation!"
+             >précédent</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Documentation Lumache 0.1</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2024, Bibi.
+      Créé avec <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>
