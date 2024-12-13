@@ -15,7 +15,7 @@ def get_random_ingredients(kind=None):
 def hello_world():
     """The classical 'Hello, World!' function"""
 
-    print('Hello, world!')
+    print('Hello, World!')
 
 class InvalidKindError(Exception):
     """Raised if the kind is invalid"""
